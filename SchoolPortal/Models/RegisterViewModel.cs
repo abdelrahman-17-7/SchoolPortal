@@ -17,5 +17,16 @@ namespace SchoolPortal.ViewModels
         [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "Passwords do not match")]
         public string ConfirmPassword { get; set; } = string.Empty;
+
+        [Required]
+        [Display(Name = "Full Name")]
+        public string FullName { get; set; } = string.Empty;
+
+
+        public int Age { get; set; }
+
+        [Required]
+        [Display(Name = "Grade")]
+        public string Grade { get; set; } = string.Empty;
     }
 }
