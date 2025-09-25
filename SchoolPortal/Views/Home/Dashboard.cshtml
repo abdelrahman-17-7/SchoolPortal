@@ -1,0 +1,18 @@
+﻿@model SchoolPortal.Models.Student
+
+@{
+    ViewData["Title"] = "My Dashboard";
+}
+
+<h2>My Dashboard</h2>
+
+@if (Model != null)
+{
+    <p><strong>Serial Number:</strong> @Model.SerialNumber</p>
+    <p><strong>Full Name:</strong> @Model.FullName</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+}
+else
+{
+    <p>Student information not found.</p>
+}
